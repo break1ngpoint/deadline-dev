@@ -42,7 +42,7 @@ FILTER = [
         
 # functions
 class APP_LINUX_STABLE(App):
-    def __init__(self, tag = "4.13.2"):
+    def __init__(self, tag = "5.5.10"):
         super(APP_LINUX_STABLE, self).__init__("linux-stable", tag, 
                 BUILDER, None)
 

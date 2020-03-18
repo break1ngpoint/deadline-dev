@@ -2,12 +2,12 @@
 
 # binary choices
 BASE="http://releases.llvm.org"
-VERN="4.0.0"
+VERN="9.0.0"
 
 # platform specifics
 case "$OSTYPE" in
   linux*)
-    DIST="x86_64-linux-gnu-ubuntu-16.04"
+    DIST="x86_64-linux-gnu-ubuntu-18.04"
     ;;
   darwin*)
     DIST="x86_64-apple-darwin"
