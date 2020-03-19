@@ -90,7 +90,7 @@ class APP_LINUX_STABLE(App):
         return True
 
     def parse_line(self, line):
-        line = line.strip()
+        line = line.split(";")[0].strip()
         toks = line.split(" ", 1)
         if toks[0] != "gcc":
             return (False, None)
