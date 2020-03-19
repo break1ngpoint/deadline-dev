@@ -47,6 +47,8 @@ def CMDParser():
     parser.add_argument("-MP", action="store_true")
     parser.add_argument("-MF", type=str, default=None)
 
+    parser.add_argument("-static", action="store_true")
+
     # defines
     parser.add_argument("-D", type=str, action="append", default=[])
     # undefs
@@ -77,7 +79,10 @@ def CMDParser():
     parser.add_argument("--param", type=str, action="append", default=[])
 
     # src file
-    parser.add_argument("inputs", type=str, nargs="+") 
+    parser.add_argument("inputs", type=str, nargs="+")
+
+    # language
+    parser.add_argument("-x", type=str, default=None)
 
     return parser
 
