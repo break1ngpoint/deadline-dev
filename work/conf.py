@@ -56,6 +56,9 @@ LLVM_BIN_LLD = join(LLVM_BINS, "ld.lld")
 LLVM_BIN_BLD = join(LLVM_BINS, "llvm-link")
 LLVM_BIN_OPT = join(LLVM_BINS, "opt")
 
+LLVM_LIBS = join(LLVM_PREP, "lib")
+LLVM_LIB_PFP = join(LLVM_LIBS, "PrintFunctionProtos.so")
+
 LLVM_SYMS = join(PATH_LLVM, "syms")
 
 # opts

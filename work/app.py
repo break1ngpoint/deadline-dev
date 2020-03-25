@@ -644,8 +644,8 @@ class App(object):
             if exists(out) and not force:
                 cmd = PoolWork(True, red, "echo 'skip'")
             else:
-                cmd = PoolWork(True, red, "%s -emit-llvm %s -o %s %s" % \
-                        (LLVM_BIN_CLA, runs[r], out, r))
+                cmd = PoolWork(True, red, "%s -fplugin=%s -emit-llvm %s -o %s %s" % \
+                        (LLVM_BIN_CLA, LLVM_LIB_PFP, runs[r], out, r))
 
             cmds.append(cmd)
             outs.append(out)
